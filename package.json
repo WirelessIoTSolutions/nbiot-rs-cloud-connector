@@ -1,0 +1,29 @@
+{
+  "name": "rs_cloud_connector",
+  "version": "1.0.0",
+  "description": "NB-IoT Relay Service Adafruit.io, Microsoft Azure connector",
+  "main": "",
+  "scripts": {
+    "testClient": "nodemon ./testClient/startTestClient.js --exec babel-node -e js --presets es2015",
+    "adafruit": "nodemon ./adafruitConnector.js --exec babel-node -e js --presets es2015",
+    "azure": "nodemon ./azureConnector.js --exec babel-node -e js --presets es2015",
+    "probe": "nodemon ./probe.js --exec babel-node -e js --presets es2015",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lyn Matten, Andjela Vuckovic dos Reis",
+  "license": "MIT",
+  "dependencies": {
+    "azure-iot-device": "^1.4.0",
+    "azure-iot-device-mqtt": "^1.4.0",
+    "babel-n_": "^0.1.2",
+    "babel-node-bin-stage-0": "^0.1.1",
+    "bluebird": "^3.5.3",
+    "moment": "^2.23.0",
+    "mqtt": "^2.18.8",
+    "nconf": "^0.10.0",
+    "nodemon": "^1.18.9",
+    "request": "^2.88.0",
+    "socket.io-client": "^2.2.0",
+    "mathjs": "^5.5.0"
+  }
+}

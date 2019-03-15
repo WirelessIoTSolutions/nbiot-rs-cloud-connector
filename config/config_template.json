@@ -1,0 +1,37 @@
+{
+    "maxDebugLevel": 3, // see comments in log/dbg.js
+    "udpRelayService": {
+      "url": "<add the url of the NB-IoT Relay Service>",
+      "bearerToken": "<add the app token generated via mm1 technology NB-IoT Relay Service API>",
+      "filterImsi":""
+      // if "filterImsi" is set, all incomming messages from different NB-IoT devices are going to be filtered by this imsi.
+      // Strongly recomenden if the Adafruit free account is used, where the number of feeds is limited to 10
+      // Must also be set when using Azure IoT Central connector
+    },
+
+    "adafruit": {
+        "adafruitOptions": {
+            "login": "<add your Adafruit User Name>",
+            "pwd": "<add your Adafruit Active Key>",
+            "server": "mqtts://io.adafruit.com",
+            "port": 8883,
+            "conName": "Adafruit.io"
+        },
+        "subscribeToTopics":["<add your Adafruit User Name>/feeds/imsi-<add the device IMSI>.set-oled",
+          "<add your Adafruit User Name>/feeds/imsi-<add the device IMSI>.set-interval"]
+
+
+      // In order to subscribe to other topics, add other feed names to the array.
+      // Use the format: "<Adafruit User Name>/feeds/imsi-<device IMSI>.<the name of your topic>"
+      // Take care to add the same feed name on the Adafruit.io portal
+    },
+
+    "azure": {
+         "connectionString": "<your generated connection string>",
+         "deviceProperties": {
+            "devName": "mm1 Technology NB-IoT Demo Kit", // or some other
+            "imsi": "<IMSI of your NB-IoT device>"
+         }
+    }
+
+}
