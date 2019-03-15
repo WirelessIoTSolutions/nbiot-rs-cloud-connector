@@ -20,9 +20,9 @@ The connector can be used with mm1 Technology NB-IoT Demo Kit.
 [3 Setup Azure IoT Central application and generate the Connection String](#anchor4)  
 [5 Send and receive Data via Azure IoT Central](#anchor5)  
 [6 Run the Application](#anchor6)
-[7 Authors](#anchor8)  
-[8 License](#anchor9)  
-[9 Acknowledgments](#anchor10)  
+[7 Authors](#anchor7)  
+[8 License](#anchor8)  
+[9 Acknowledgments](#anchor9)  
 
 ### Install node.js
 
